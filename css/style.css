@@ -353,6 +353,7 @@
 
 .speciality .box-container .box:hover .image{
     top: 0;
+    transition: 0.8s;
 }
 
 .speciality .box-container .box:hover .p{
