@@ -333,7 +333,7 @@
     align-items: center;
     text-align: center;
     justify-content: center;
-    font-size: calc(1.275rem + .3vw);
+    font-size: 1rem;
     padding: .7rem;
 }
 .speciality .box-container .box .content{
