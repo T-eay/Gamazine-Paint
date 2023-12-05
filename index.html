@@ -21,6 +21,7 @@
 
     <!-- Libraries Stylesheet -->
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -426,6 +427,34 @@
         </div>
     </div>
     <!-- Blog End -->
+    <section class="blogs" id="blogs">
+        <div class="text-center mx-auto mb-5" style="max-width: 500px;">
+            <h1 class="display-5">Video Review Slider</h1>
+            <hr class="w-25 mx-auto text-primary" style="opacity: 1;">
+        </div>
+        <div class="swiper blogs-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide slide">
+              <div class="image">
+                <video src="img/gamazine-vid1.mp4" autoplay="" controls="" loop="" width="100%"></video>
+              </div>
+             
+            </div>
+      
+            <div class="swiper-slide slide">
+              <div class="image">
+                <video src="img/gamazine-vid2.mp4" autoplay="" controls="" loop="" width="100%"></video>
+              </div>
+              
+            </div>
+      
+           
+      
+    
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
 
 
     <!-- Call To Action Start -->
@@ -634,6 +663,7 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script>
         function gotowhatsapp() {
             
@@ -650,6 +680,30 @@
         
             window.open(url, '_blank').focus();
         }
+        </script>
+        <script>
+                var swiper = new Swiper(".blogs-slider", {
+      spaceBetween: 20,
+      grabCursor: true,
+      loop:true,
+    
+      autoplay: {
+        delay: 20080,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      breakpoints:{
+        0:{
+          slidesPerView:1,
+        },
+        600:{
+          slidesPerView:2,
+        }
+      }
+    });
         </script>
    
 </body>
